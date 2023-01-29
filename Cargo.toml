@@ -1,0 +1,26 @@
+[package]
+name = "esp_rv_baremetal_test1"
+version = "0.1.0"
+authors = ["oldsheep <oldsheep68@hotmail.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+# esp32c3-hal = "0.2.0"
+esp32c3-hal = "0.5.0"
+# esp32-hal = "0.8.0"
+
+# esp-backtrace = { version = "0.2.0", features = ["esp32c3", "panic-handler", "print-uart"] }
+esp-backtrace = { version = "0.3.0", features = ["esp32c3", "exception-handler", "panic-handler", "print-jtag-serial"] }
+riscv              = "0.10.0"
+riscv-rt = { version = "0.10", optional = true }
+shared-bus = "0.2.5"  
+# icm42670 = "0.1.1"
+icm42670 = { path = "../../oldsheep/icm42670/" }
+dcmimu = "0.2.2"
+shtcx = "0.11.0"
+critical-section  = "1.1.1"
+
+[features]
+default = ["rt"]
+rt = ["riscv-rt"]
