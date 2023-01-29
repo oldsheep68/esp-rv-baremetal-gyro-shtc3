@@ -1,7 +1,7 @@
 [target.riscv32imac-unknown-none-elf]
-# runner = "espflash --monitor"
+runner = "espflash --monitor"
 # for use with espflash2.x
-runner = "espflash flash --monitor"
+# runner = "espflash flash --monitor"
 
 [build]
 rustflags = [

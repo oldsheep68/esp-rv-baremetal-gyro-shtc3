@@ -11,11 +11,11 @@ esp32c3-hal = "0.5.0"
 # esp32-hal = "0.8.0"
 
 # esp-backtrace = { version = "0.2.0", features = ["esp32c3", "panic-handler", "print-uart"] }
-esp-backtrace = { version = "0.3", features = ["esp32c3", "exception-handler", "panic-handler", "print-jtag-serial"] }
+esp-backtrace = { version = "0.4", features = ["esp32c3", "exception-handler", "panic-handler", "print-jtag-serial"] }
 # esp-backtrace = { version = "0.4.0", features = ["esp32c3", "exception-handler", "panic-handler", "print-rtt"] }
 
 # riscv              = "0.10.0"
-riscv = { version = "0.10.0", optional = true }
+riscv = { version = "0.10.1", optional = true }
 riscv-rt = { version = "0.11", optional = true }
 shared-bus = "0.2.5"
 # icm42670 = "0.1.1"

@@ -122,9 +122,9 @@ fn main() -> ! {
         interrupt::InterruptKind::Edge,
     );
     
-    unsafe {
-        riscv::interrupt::enable();
-    }
+    // unsafe {
+    //     riscv::interrupt::enable();
+    // }
     
     let mut last_now = SystemTimer::now();
 
