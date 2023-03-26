@@ -140,7 +140,7 @@ fn main() -> ! {
         
         let t4 = SystemTimer::now();
         let mut fifodata:[u8;20] = [0;20];
-        let _ret = icm.read_fifo(0x3F as u8, &mut fifodata);
+        let _ret = icm.read_fifo(&mut fifodata);
         // only continue, if fifo read contains valied data
         // if no data, do nothing
         if (fifodata[0] & 0x80) == 0x80 {
